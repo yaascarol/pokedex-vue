@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+/* ---------- TÍTULO ---------- */
+h1 {
+  text-align: center;
+  margin: 20px 0 10px 0;
+  font-size: 32px;
+  color: #d62828;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ---------- BUSCA ---------- */
+input {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  width: 60%;
+  max-width: 300px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  display: block;
+  margin: 15px auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  background: #d62828;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+button:hover {
+  background: #b31f1f;
+}
+
+/* ---------- LISTA ---------- */
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+  width: 90%;
+  max-width: 900px;
+  margin: 25px auto;
+}
+
+/* ---------- CARD ---------- */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  image-rendering: pixelated;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+/* ---------- DETALHES ---------- */
+.details {
+  width: 90%;
+  max-width: 500px;
+  margin: 25px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.details img {
+  width: 150px;
+  height: 150px;
+  image-rendering: pixelated;
+}
+
+.details h2 {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.stats {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.stats div {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+@media (max-width: 480px) {
+  input {
+    width: 85%;
+  }
+
+  .list {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .card img {
+    width: 80px;
+    height: 80px;
+  }
+}
