@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import { PokeService } from "./services/PokeService.js";
+import { PokeService } from "./../services/PokeService";
 import PokemonList from "./components/molecules/PokemonList.vue";
 import PokemonDetails from "./components/organisms/PokemonDetails.vue";
 
